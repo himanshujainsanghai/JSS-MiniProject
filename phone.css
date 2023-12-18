@@ -1,0 +1,156 @@
+/* navigation section */
+.navbar{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.navbar img{
+    height: auto;
+    width: 20vw;
+    display: flex;
+}
+ul li a{
+    font-size: 1rem;
+    padding:0px 10px;
+}
+
+.p1{
+    display: none;
+}
+#sec::before{
+    /* display: none; */
+    height: 36vh;
+}
+.hprime{
+    /* position: inherit; */
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+.rem{
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100vw;
+    height: 14vh; */
+
+}
+#sec{
+    padding: 0px 0px;
+}
+
+
+
+/* services section */
+#services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.box{
+    /* border: 2px solid red; */
+}
+#box1::before{
+    /* display: none; */
+    top: 51vh;
+    left: 0;
+    height: 35vh;
+    width: 100vw;
+
+}
+#box2::before{
+    /* display: none; */
+    top: 95vh;
+    left: 0;
+    height: 35vh;
+    width: 100vw;
+}
+#box3::before{
+    /* display: none; */
+    top: 140vh;
+    left: 0;
+    height: 35vh;
+    width: 100vw;
+}
+#box4::before{
+    /* display: none; */
+    top: 185vh;
+    left: 0;
+    height: 35vh;
+    width: 100vw;
+}
+#box5::before{
+    /* display: none; */
+    top: 230vh;
+    left: 0;
+    height: 35vh;
+    width: 100vw;
+}
+#box6::before{
+    top: 275vh;
+    left: 0;
+    height: 35vh;
+    width: 100vw;
+    /* display: none; */
+}
+#id1{
+    font-size: 1rem;
+}
+.hp2{
+    font-size: 1rem;
+}
+
+
+
+/* our clients section */
+.clients::before{
+    /* display: none; */
+    top: 320vh;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+}
+#hclients{
+    font-size: 1.1rem;
+}
+.img1{
+    /* width: 5.25em; */
+    /* height: 5.25em; */
+    /* margin: 5px 10px; */
+    /* width: 100%; */
+    /* max-width: 100px; */
+    /* height: auto; */
+}
+
+
+
+
+/* contact us secction */
+
+.f1{
+    border: 2px solid yellow;
+}
+.f1::before{
+    /* display: none; */
+    top: 378vh;
+    left: 0;
+    height: 75vh;
+    width: 100vw;
+}
+#id2{
+    font-size: 1.1rem;
+}.contactbox form{
+    width: 50%;
+    
+}
+
+
+
+
+/* footer */
+/* Note hmko width le4ss than 400 and morethan 1150 dono ke liye aur css deni pdegi alag alag se  */

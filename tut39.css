@@ -1,0 +1,402 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Css variables */
+:root{
+    
+}
+body{
+    background-color: black;
+    z-index: -3;
+}
+/* navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Pacifico', cursive;
+}
+.navbar::before{
+    content: "";
+    background-color: rgb(212, 207, 207);
+    /* background-color: black; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+.logo img{
+    width: 5vw;
+    height: 7vh;
+    display: block;
+    border-radius: 60%;
+    object-fit: cover;
+    margin: 10px 20px ;
+
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    /* border-radius: 20px; */
+
+}
+ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    padding:5px 30px;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+
+}
+/* Home --Section */
+#sec{
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px 150px;
+}
+#sec::before{
+    content: "";
+    background : url(b2.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100vw;
+    height: 55vh;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0;
+    left: 0;
+
+}
+/* utility classes */
+.hprime{
+    font-size: 3.5rem;
+    font-style: bold;
+    /* font-family: sans-serif; */
+    font-family: 'Kaushan Script', cursive;
+    padding: 12px;
+    color: white;
+}
+p{
+    font-size: 1.5rem;
+    font-style: italic;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    color: white;
+    font-family: 'Acme', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn{
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: black;
+    margin: 5px 50px ;
+    padding: 5px 12px;
+    font-size: 1.5rem;
+    position: relative;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kaushan Script', cursive;
+
+}
+.btn:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+
+
+/* section 2*/
+
+
+
+
+.box img{
+    height: 100px;
+    width: 100px;
+}
+.hp2{
+    color: white;
+    /* padding: 1% 8%; */
+    font-size: 2.5rem;
+    font-family: 'Merienda', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: inherit;
+}
+#sec2{
+    margin: 35px 0px;
+}
+#services{
+    display: grid;
+    grid-template-areas:
+    "a a a"
+    "b c d"
+    "e f g"
+    ;
+
+}
+#id1{
+    grid-area: a;
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: grey;
+
+}
+.box{
+    /* border: 2px solid red; */
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    
+}
+#box1{
+    grid-area: b;
+    /* z-index: -1; */
+    /* padding: auto; */
+} 
+#box2{
+    grid-area: c;
+    /* background: url(crispy-mixed-pizza-with-olives-sausage.jpg) no-repeat center center/cover; */
+}
+#box3{
+    grid-area: d;
+    /* background: url(crispy-mixed-pizza-with-olives-sausage.jpg) no-repeat center center/cover; */
+}
+#box4{
+    grid-area: e;
+}
+#box5{
+    grid-area: f;
+    overflow: none;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+#box6{
+    grid-area: g;
+}
+#box1::before{
+    content: "";
+    background: url(crispy-mixed-pizza-with-olives-sausage.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 67vh;
+    left: 0;
+    z-index: -1;
+    opacity:0.5;
+    width: 31%;
+    height: 45vh;
+    object-position: initial;
+    border-radius: 50px;
+    
+    
+}
+#box2::before{
+    content: "";
+    background: url(b1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 67vh;
+    left:32.2%;
+    z-index: -1;
+    opacity:0.5;
+    width: 33.33%;
+    height: 45vh;
+    object-position: initial;
+    border-radius: 50px;
+
+
+}
+#box3::before{
+    content: "";
+    background: url(top-view-fresh-delicious-chinese-food-dark-background\ \(1\).jpg) no-repeat center center/cover;
+    position: absolute;
+    border-radius: 50px;
+    top: 67vh;
+    left: 67%;
+    z-index: -1;
+    opacity:0.5;
+    width: 33.33%;
+    height: 45vh;
+    object-position: initial;
+    
+    
+}
+#box4::before{
+    content: "";
+    background: url(top-view-fresh-delicious-chinese-food-dark-background.jpg) no-repeat center center/cover;
+    position: absolute;
+    border-radius: 50px;
+    top: 116vh;
+    left: 0;
+    z-index: -1;
+    opacity:0.5;
+    width: 31%;
+    height: 45vh;
+    object-position: initial;
+    
+    
+}
+#box5::before{
+    content: "";
+    background: url(top-view-chinese-hot-pot.jpg) no-repeat center center/cover;
+    position: absolute;
+    border-radius: 50px;
+    top: 116vh;
+    left: 32.2%;
+    z-index: -1;
+    opacity:0.5;
+    width: 33.33%;
+    height: 45vh;
+    object-position: initial;
+    
+    
+}
+#box6::before{
+    content: "";
+    background: url(flat-lay-indian-dessert-arrangement.jpg) no-repeat center center/cover;
+    position: absolute;
+    border-radius: 50px;
+    top: 116vh;
+    left: 67%;
+    z-index: -1;
+    opacity:0.5;
+    width: 33.33%;
+    height: 45vh;
+    object-position: initial;
+    
+    
+}
+.c2{
+    font-family: 'Damion', cursive;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* clients section */
+
+.clients{
+    margin: 70px 0px;
+
+    /* border: 2px solid red; */
+}
+.clientsimg{
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    margin-top: -25px;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+#hclients{
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    
+}
+.clients img{
+    width: 6.25rem;
+    height: 6.25rem;
+    margin: 5px 10px;
+}
+.clients::before{
+    content: "";
+    background: url(Bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 165vh;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    z-index: -1;
+    opacity: 0.4;
+    border-radius: 60px;
+}
+
+/* This is contact section  */
+
+#id2{
+    text-align: center;
+    margin: 0px 0px;
+    font-size: 3rem;
+    font-family: 'Kaushan Script', cursive;
+}
+.f1{
+    border: 2px solid red;
+    width: 100vw;
+    height: 81vh;
+    color: white;
+
+
+}
+.f1::before{
+    content: "";
+    background: url(contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 217vh;
+    left: 0;
+    width: 100vw;
+    height:89vh ;
+    z-index: -1;
+    opacity: 0.5;
+    border-radius: 50px;
+
+}
+.contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px ;
+}
+.contactbox input,
+.contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+   
+}
+.contactbox form{
+    width: 40%;
+    
+}
+
+.contactbox label{
+    font-size: 1.5rem;
+    font-family: 'Acme', sans-serif;
+
+
+}
+
+/* footer */
+footer{
+    color: white;
+    padding: 28px 20px;
+    text-align: center;
+    margin-top: 150px;
+}
