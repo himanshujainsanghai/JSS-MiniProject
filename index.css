@@ -55,6 +55,17 @@ ourpartners->>>ourpartners-clients
     --contact-height:70vh;
     --contact-width:100vw;
 
+    --contact-us-height:20vh;
+    --contact-us-width:100vw;
+
+    --contact-form-height:50vh;
+    --contact-form-width:100vw;
+
+    --contact-form-fontsize:2.5rem;
+    --contact-form-input-fontsize:1.6rem;
+
+
+
     /* ourpartners-bar-dimensions */
     --ourpartners-height:50vh;
     --ourpartners-width:100vw;
@@ -70,10 +81,22 @@ ourpartners->>>ourpartners-clients
     --gap-width:100vw;
 
 
+    /* navbar-a-dimensions */
+    --navbar-a-fontsize:1.8rem;
 
 
-    /* --services-contents-height:30vh; */
-    /* --services-contents-width:33vw; */
+    /* hprime class dimensions */
+    --hprime-fontsize:4.5rem;
+
+    /* welcome-para-dimensions */
+    --welcome-para-fontsize:1.4rem;
+
+    /* servies-contents-gridflex->cuisine */
+    --cuisine-fontsize:2.2rem;
+
+
+
+
 }
 body{
     z-index: -4;
@@ -83,12 +106,27 @@ body{
     overflow-y: scroll;
 }
 img{
-    max-width: 12vw;
+    max-width: 15vw;
     height: auto;
 }
 ul li{
     display: inline;
 }
+
+
+.hprime{
+    font-size: var(--hprime-fontsize);
+    align-self: center;
+    text-align: center;
+}
+
+.cuisine{
+    font-size: var(--cuisine-fontsize);
+    z-index: 1;
+}
+
+
+
 
 /* homepage */
 .homepage{
@@ -120,7 +158,7 @@ ul li{
     background-position: center;
     position: absolute;
     z-index: -3;
-    opacity: 0.8;
+    opacity: 0.6;
     width: var(--navigation-width);
     height: var(--navigation-height);
     /* top: 0;
@@ -148,7 +186,7 @@ ul li{
     /* background-color:white; */
     position: absolute;
     z-index: -2;
-    opacity: 0.2;
+    opacity: 0.1;
     width: var(--navbar-width);
     height: var(--navbar-height);
 
@@ -156,7 +194,9 @@ ul li{
 }
 .navbar-ul{
     z-index: 1;
-    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 
 
@@ -176,7 +216,21 @@ ul li{
 .navbar-ul a{
     z-index: 1;
     text-decoration: none;
+    color: var(--white);
+    /* border: 1px solid black; */
 
+
+}
+.navbar-ul a:hover{
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 1rem;
+    padding: 0.4rem;
+}
+.navbar-a{
+    font-size: var(--navbar-a-fontsize);
+    margin-left:2.5rem ;
+    margin-right:2.5rem ;
 }
 
 /* navigation->navbarContent */
@@ -185,7 +239,15 @@ ul li{
     width:var(--navbarcontent-width);
     height: var(--navbarcontent-height);
     /* border: 5px solid greenyellow; */
+    /* text-align: left; */
     
+}
+.navbarContent h1{
+    text-align:left;
+}
+
+.welcome-para{
+    font-size: var(--welcome-para-fontsize);
 }
 
 
@@ -203,6 +265,9 @@ ul li{
 .ourservices{
     width: var(--ourservices-width);
     height: var(--ourservices-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* services->services-contents */
 .services-contents{
@@ -219,6 +284,9 @@ ul li{
     width: var(--services-contents-gridflex-width);
     height: var(--services-contents-gridflex-height);
     /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -227,14 +295,14 @@ ul li{
     
     background-image: url(pexels-valeria-boltneva-1639557.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: var(--services-contents-gridflex-img-width),var(--services-contents-gridflex-img-height);
     width: var(--services-contents-gridflex-img-width);
     height: var(--services-contents-gridflex-img-height);
     position: absolute;
     border-radius: 10%;
-    z-index: -1;
-    opacity: 0.8;
+    z-index: -2;
+    opacity: 0.5;
     
     
     
@@ -279,8 +347,8 @@ background-image: url(indian-food-by-sat-bhatti-1-1329903.jpg);
     width: var(--contact-width);
     height: var(--contact-height);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     flex-direction: column;
 
 }
@@ -294,8 +362,54 @@ background-image: url(indian-food-by-sat-bhatti-1-1329903.jpg);
     width: var(--contact-width);
     height: var(--contact-height);
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.5;
     /* border-radius: 10%; */
+}
+
+
+.contact-us{
+    width:var(--contact-us-width) ;
+    height: var(--contact-us-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: var(--contact-form-width);
+    height: var(--contact-form-height);
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+    border-top: 5px solid var(--black);
+    /* box-sizing: border-box; */
+
+    
+}
+
+/* contact->div.contact-us + div.form->form->div.formgroup */
+.formgroup{
+    font-size: var(--contact-form-fontsize);
+    margin: 0.7rem;
+}
+
+.form input{
+    font-size: var(--contact-form-input-fontsize);
+    padding-left: 0.5rem;
+    opacity: 0.8;
+}
+
+.btn{
+    font-size: var(--contact-form-input-fontsize);
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0.5rem;
+    border: 2px solid var(--white);
+    margin-top: 1rem;
+}
+.btn:hover{
+    opacity: 0.5;
 }
 
 
@@ -320,8 +434,16 @@ background-image: url(indian-food-by-sat-bhatti-1-1329903.jpg);
     width: var(--ourpartners-width);
     height: var(--ourpartners-height);
     z-index: -2;
-    opacity: 0.6;
+    opacity: 0.4;
     /* border-radius: 10%; */
+}
+
+.ourpartners-clients-img img{
+    width: auto;
+    height: 10vh;
+    /* margin: margin-y , margin-x */
+   
+
 }
 
 

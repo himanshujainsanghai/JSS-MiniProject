@@ -24,5 +24,5 @@ app.use((req,res)=>{
 
 
 app.listen(port,()=>{
-    console.log('EXpress app is listening at port 3000 ');
+    console.log('Express app is listening at port 3000 ');
 });
