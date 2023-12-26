@@ -25,13 +25,13 @@ ourpartners->>>ourpartners-clients
     --light-grey: #232323;
     --white: #fff;
     /* navigation-bar-dimensions */
-    --navigation-height:50vh;
+    --navigation-height:60vh;
     --navigation-width:100vw;
 
     --navbar-height:10vh;
     --navbar-width:100vw;
 
-    --navbarcontent-height:40vh;
+    --navbarcontent-height:50vh;
     --navbarcontent-width:100vw;
 
     /* services-bar-dimensions */
@@ -103,6 +103,7 @@ body{
     background-color:var(--black);
     color:var(--white);
     overflow-x: hidden;
+    scroll-behavior: smooth;
     overflow-y: scroll;
 }
 img{
@@ -118,6 +119,7 @@ ul li{
     font-size: var(--hprime-fontsize);
     align-self: center;
     text-align: center;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .cuisine{
@@ -186,7 +188,7 @@ ul li{
     /* background-color:white; */
     position: absolute;
     z-index: -2;
-    opacity: 0.1;
+    opacity: 0.01;
     width: var(--navbar-width);
     height: var(--navbar-height);
 
@@ -240,10 +242,18 @@ ul li{
     height: var(--navbarcontent-height);
     /* border: 5px solid greenyellow; */
     /* text-align: left; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
 .navbarContent h1{
-    text-align:left;
+    /* text-align:left; */
+    font-weight: bolder;
+    /* font-style: italic; */
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 7rem;
 }
 
 .welcome-para{
@@ -350,6 +360,7 @@ background-image: url(indian-food-by-sat-bhatti-1-1329903.jpg);
     /* align-items: center; */
     /* justify-content: center; */
     flex-direction: column;
+    /* overflow: hidden; */
 
 }
 .contact::before{
