@@ -7,6 +7,23 @@ ourpartners->>>ourpartners-clients
 
 
 */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 
 
@@ -14,124 +31,178 @@ ourpartners->>>ourpartners-clients
 
 
 
-*{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
     margin: 0;
     padding: 0;
     /* z-index: -2; */
 }
+
 :root {
     --black: #000;
     --grey: #121212;
     --light-grey: #232323;
     --white: #fff;
     /* navigation-bar-dimensions */
-    --navigation-height:60vh;
-    --navigation-width:100vw;
+    --navigation-height: 60vh;
+    --navigation-width: 100vw;
 
-    --navbar-height:10vh;
-    --navbar-width:100vw;
+    --navbar-height: 12vh;
+    --navbar-width: 100vw;
 
-    --navbarcontent-height:50vh;
-    --navbarcontent-width:100vw;
+    --navbarcontent-height: 48vh;
+    --navbarcontent-width: 100vw;
+
+    /* orderfood */
+    --orderfood-height: 40vh;
+    --orderfood-width: 100vw;
+
+    --orderfood-contents-height: 40vh;
+    --orderfood-contents-width: 30vw;
+
+
+    --orderfood-contents-1-height: 30vh;
+    --orderfood-contents-1-width: var(--orderfood-contents-width);
+    --orderfood-contents-2-height: 10vh;
+    --orderfood-contents-2-width: var(--orderfood-contents-width);
+
+
 
     /* services-bar-dimensions */
-    --services-height:180vh;
-    --services-width:100vw;  
+    --services-height: 180vh;
+    --services-width: 100vw;
 
-    --ourservices-height:20vh;
-    --ourservices-width:100vw;
-    
-    --services-contents-height:160vh;
-    --services-contents-width:100vw;
+    --ourservices-height: 20vh;
+    --ourservices-width: 100vw;
 
-    --services-contents-gridflex-height:40vh;
-    --services-contents-gridflex-width:33vw;
+    --services-contents-height: 160vh;
+    --services-contents-width: 100vw;
 
-    --services-contents-gridflex-img-height:35vh;
-    --services-contents-gridflex-img-width:32vw;
+    --services-contents-gridflex-height: 40vh;
+    --services-contents-gridflex-width: 33vw;
+
+    --services-contents-gridflex-img-height: 35vh;
+    --services-contents-gridflex-img-width: 32vw;
+
+    /* community support */
+    --community-height: 40vh;
+    --community-width: 100vw;
+
+    --partof-community-height: 8vh;
+    --partof-community-width: 100vw;
+
+    --community-deals-height: 32vh;
+    --community-deals-width: 100vw;
+
+    --comm-dealbox-height: 32vh;
+    --comm-dealbox-width: 25vw;
+
+    --comm-dealbox-img-height: 30vh;
+    --comm-dealbox-img-width: auto;
+
+
 
 
     /* contact-bar-dimensions */
-    --contact-height:70vh;
-    --contact-width:100vw;
+    --contact-height: 70vh;
+    --contact-width: 100vw;
 
-    --contact-us-height:20vh;
-    --contact-us-width:100vw;
+    --contact-us-height: 20vh;
+    --contact-us-width: 100vw;
 
-    --contact-form-height:50vh;
-    --contact-form-width:100vw;
+    --contact-form-height: 50vh;
+    --contact-form-width: 100vw;
 
-    --contact-form-fontsize:2.5rem;
-    --contact-form-input-fontsize:1.6rem;
+    --contact-form-fontsize: 2.5rem;
+    --contact-form-input-fontsize: 1.6rem;
 
 
 
     /* ourpartners-bar-dimensions */
-    --ourpartners-height:50vh;
-    --ourpartners-width:100vw;
+    --ourpartners-height: 50vh;
+    --ourpartners-width: 100vw;
 
 
     /* footers-bar-dimensions */
-    --footers-height:5vh;
-    --footers-width:100vw;
+    --footers-height: 5vh;
+    --footers-width: 100vw;
 
 
     /* gap-bar-dimensions */
-    --gap-height:2vh;
-    --gap-width:100vw;
+    --gap-height: 2vh;
+    --gap-width: 100vw;
 
 
     /* navbar-a-dimensions */
-    --navbar-a-fontsize:1.8rem;
+    --navbar-a-fontsize: 1.8rem;
 
 
     /* hprime class dimensions */
-    --hprime-fontsize:4.5rem;
+    --hprime-fontsize: 4.5rem;
 
     /* welcome-para-dimensions */
-    --welcome-para-fontsize:1.4rem;
+    --welcome-para-fontsize: 2rem;
 
     /* servies-contents-gridflex->cuisine */
-    --cuisine-fontsize:2.2rem;
+    --cuisine-fontsize: 2.2rem;
+
+    /* community heading fontsize */
+    --comm-heading-fontsize: 2.5rem;
 
 
 
 
 }
-body{
+
+body {
     z-index: -4;
-    background-color:var(--black);
-    color:var(--white);
+    background-color: var(--black);
+    color: var(--white);
     overflow-x: hidden;
     scroll-behavior: smooth;
     overflow-y: scroll;
 }
-img{
+
+/* img{
     max-width: 15vw;
     height: auto;
-}
-ul li{
+} */
+ul li {
     display: inline;
 }
 
 
-.hprime{
+.hprime {
     font-size: var(--hprime-fontsize);
     align-self: center;
     text-align: center;
     font-family: 'Source Code Pro', monospace;
 }
 
-.cuisine{
+.cuisine {
     font-size: var(--cuisine-fontsize);
     z-index: 1;
+    font-family: 'Play', sans-serif;
 }
 
 
 
 
 /* homepage */
-.homepage{
+.homepage {
     display: flex;
     /* flex: 1; */
     flex-direction: column;
@@ -141,7 +212,7 @@ ul li{
 
 
 /* navigation */
-.navigation{
+.navigation {
     /* border: 2px solid red; */
     /* flex: 0.4; */
     width: var(--navigation-width);
@@ -151,7 +222,8 @@ ul li{
     /* flex: 1; */
 
 }
-.navigation::before{
+
+.navigation::before {
     content: " ";
     /* background: url(b2.jpg) no-repeat center center/cover; */
     background-image: url(b2.jpg);
@@ -160,7 +232,7 @@ ul li{
     background-position: center;
     position: absolute;
     z-index: -3;
-    opacity: 0.6;
+    opacity: 0.5;
     width: var(--navigation-width);
     height: var(--navigation-height);
     /* top: 0;
@@ -169,19 +241,24 @@ ul li{
 
 /* navigation->navbar */
 
-.navbar{
+.navbar {
     /* flex: 0.30; */
     width: var(--navbar-width);
     /* height: 10vh; */
     height: var(--navbar-height);
     /* justify-content: center; */
     display: flex;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items:end; */
+    /* align-self: normal; */
+    /* flex: 1; */
+    flex-direction: row;
 
     /* border: 2px solid rgb(20, 46, 196); */
-    
+
 }
-.navbar::before{
+
+.navbar::before {
     content: " ";
     background-color: var(--white);
     /* background-color: rgb(212, 207, 207); */
@@ -194,51 +271,111 @@ ul li{
 
     /* height: 10vh; */
 }
-.navbar-ul{
+
+.navbar_logo {
+    /* flex: 0.5; */
+    width: 50vw;
+    /* border: 2px solid magenta; */
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-ul {
     z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    /* justify-content: center; */
+    padding: 1rem;
+
 
 
 }
 
-.navbar-ul img{
+.navbar-ul img {
     z-index: 1;
     width: 7.5vw;
     height: auto;
-    border-radius: 60%;
+    border-radius: 50%;
 }
 
-.navbar-ul li{
+.navbar-ul li {
     display: inline;
-    text-align: center;
+    /* text-align: center; */
 }
-.navbar-ul a{
+
+.navbar-ul a {
     z-index: 1;
     text-decoration: none;
     color: var(--white);
+    font-family: 'Play', sans-serif;
     /* border: 1px solid black; */
 
 
 }
-.navbar-ul a:hover{
+
+.navbar-ul a:hover {
     background-color: var(--white);
     color: var(--black);
     border-radius: 1rem;
     padding: 0.4rem;
 }
-.navbar-a{
+
+.navbar-a {
     font-size: var(--navbar-a-fontsize);
-    margin-left:2.5rem ;
-    margin-right:2.5rem ;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
+.navbar_userinfo {
+    /* display: flex; */
+    align-items: flex-end;
+    /* flex: 0.5; */
+    width: 50vw;
+    height: auto;
+    /* border: 2px solid mediumaquamarine; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+
+  
+
+
+}
+
+.navbar_userinfo a {
+    margin-left: 0.2rem;
+    margin-right: 1rem;
+
+}
+
+
+
+.navbar_userinfo img {
+    width: 2.5vw;
+    height: auto;
+    
+
+}
+/* .navbar_userinfo a img:hover {
+   
+   width: 5vw;
+   height: auto;
+   align-self: center;
+   
+
+
+} */
+
+
+
+
+
 /* navigation->navbarContent */
-.navbarContent{
+.navbarContent {
     /* flex: 0.70; */
-    width:var(--navbarcontent-width);
+    width: var(--navbarcontent-width);
     height: var(--navbarcontent-height);
     /* border: 5px solid greenyellow; */
     /* text-align: left; */
@@ -246,23 +383,117 @@ ul li{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
-.navbarContent h1{
+
+.navbarContent h1 {
     /* text-align:left; */
     font-weight: bolder;
-    /* font-style: italic; */
+    font-style: italic;
     font-family: 'Ubuntu', sans-serif;
     font-size: 7rem;
 }
 
-.welcome-para{
+.welcome-para {
     font-size: var(--welcome-para-fontsize);
+    /* font-weight: bold; */
 }
 
 
+
+/* orderfood */
+.orderfood {
+    width: var(--orderfood-width);
+    height: var(--orderfood-height);
+    display: flex;
+    flex-direction: row;
+}
+
+.orderfood_contents {
+    width: var(--orderfood-contents-width);
+    height: var(--orderfood-contents-height);
+    border: 1px solid var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    cursor: pointer;
+}
+
+.orderfood_contents_1 {
+    width: var(--orderfood-contents-1-width);
+    height: var(--orderfood-contents-1-height);
+    /* border-radius: 10%; */
+}
+
+.orderfood_contents_1::before {
+    content: "";
+
+    background-image: url(orderfood-contents1img1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: var(--orderfood-contents-1-width), var(--orderfood-contents-1-height);
+    width: var(--orderfood-contents-1-width);
+    height: var(--orderfood-contents-1-height);
+    position: absolute;
+    z-index: -1;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+
+}
+
+#oc12::before {
+    background-image: url(orderfood_contents1img78.jpg);
+}
+
+#oc13::before {
+    background-image: url(orderfood_contents1img3.jpg);
+}
+
+.orderfood_contents_2 {
+    width: var(--orderfood-contents-2-width);
+    height: var(--orderfood-contents-2-height);
+    /* border: 2px solid green; */
+    /* background-color: var(--grey); */
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+
+}
+
+.order_heading {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+
+    @media (0<width<=1250px) {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}
+
+.order_para {
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+
+    @media (0< width <=1250px) {
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* services */
-.services{
+.services {
     /* border: 2px solid palevioletred; */
     width: var(--services-width);
     height: var(--services-height);
@@ -270,17 +501,19 @@ ul li{
     flex-direction: column;
 
 }
+
 /* services->ourservices */
 
-.ourservices{
+.ourservices {
     width: var(--ourservices-width);
     height: var(--ourservices-height);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /* services->services-contents */
-.services-contents{
+.services-contents {
     width: var(--services-contents-width);
     height: var(--services-contents-height);
     /* border: 3px solid green; */
@@ -290,69 +523,151 @@ ul li{
 
 }
 
-.services-contents-gridflex{
+.services-contents-gridflex {
     width: var(--services-contents-gridflex-width);
     height: var(--services-contents-gridflex-height);
     /* border: 2px solid white; */
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 
-.services-contents-gridflex::before{
+.services-contents-gridflex::before {
     content: "";
-    
+
     background-image: url(pexels-valeria-boltneva-1639557.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: var(--services-contents-gridflex-img-width),var(--services-contents-gridflex-img-height);
+    background-size: var(--services-contents-gridflex-img-width), var(--services-contents-gridflex-img-height);
     width: var(--services-contents-gridflex-img-width);
     height: var(--services-contents-gridflex-img-height);
     position: absolute;
     border-radius: 10%;
     z-index: -2;
     opacity: 0.5;
-    
-    
-    
-}
-#scg2::before{
-    background-image: url(top-view-fresh-delicious-chinese-food-dark-background.jpg);
-}
-#scg3::before{
-   background-image: url(top-view-chinese-hot-pot.jpg);
-}
-#scg4::before{
-    background-image: url(top-view-fresh-delicious-chinese-food-dark-background\ \(1\).jpg);
-}
-#scg5::before{
-   background-image: url(crispy-mixed-pizza-with-olives-sausage.jpg);
-}
-#scg6::before{
-    background-image: url(pizza.jpg);
-}
-#scg7::before{
-background-image: url(indian-food-by-sat-bhatti-1-1329903.jpg);
-}
-#scg8::before{
-    background-image: url(indian-food-by-sat-bhatti-prt-1329468.jpg);
-}
-#scg9::before{
-    background-image: url(tuna-sandwich-1326358.jpg);
-}
-#scg10::before{
-    background-image: url(ready-to-eat-1543393.jpg);
-}
-#scg11::before{
-  background-image: url(samosa-1328834.jpg);
-}
-#scg12::before{
-   background-image: url(food-1323110.jpg);
+
+
+
 }
 
+#scg2::before {
+    background-image: url(top-view-fresh-delicious-chinese-food-dark-background.jpg);
+}
+
+#scg3::before {
+    background-image: url(top-view-chinese-hot-pot.jpg);
+}
+
+#scg4::before {
+    background-image: url(top-view-fresh-delicious-chinese-food-dark-background\ \(1\).jpg);
+}
+
+#scg5::before {
+    background-image: url(crispy-mixed-pizza-with-olives-sausage.jpg);
+}
+
+#scg6::before {
+    background-image: url(pizza.jpg);
+}
+
+#scg7::before {
+    background-image: url(indian-food-by-sat-bhatti-1-1329903.jpg);
+}
+
+#scg8::before {
+    background-image: url(indian-food-by-sat-bhatti-prt-1329468.jpg);
+}
+
+#scg9::before {
+    background-image: url(tuna-sandwich-1326358.jpg);
+}
+
+#scg10::before {
+    background-image: url(ready-to-eat-1543393.jpg);
+}
+
+#scg11::before {
+    background-image: url(samosa-1328834.jpg);
+}
+
+#scg12::before {
+    background-image: url(food-1323110.jpg);
+}
+
+
+
+/* community */
+.community {
+    width: var(--community-width);
+    height: var(--community-height);
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.comm_heading {
+    font-size: var(--comm-heading-fontsize);
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.partof_community {
+    width: var(--partof-community-width);
+    height: var(--partof-community-height);
+    /* border: 2px solid magenta; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.community_deals {
+    width: var(--community-deals-width);
+    height: var(--community-deals-height);
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+
+.comm_dealbox {
+    width: var(--comm-dealbox-width);
+    height: var(--comm-dealbox-height);
+
+    /* border: 2px solid magenta; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comm_dealbox_img {
+    width: var(--comm-dealbox-img-width);
+    /* height: var(--comm-dealbox-img-height); */
+    border-radius: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* contacts */
-.contact{
+.contact {
     /* border: 2px solid white; */
     width: var(--contact-width);
     height: var(--contact-height);
@@ -363,11 +678,12 @@ background-image: url(indian-food-by-sat-bhatti-1-1329903.jpg);
     /* overflow: hidden; */
 
 }
-.contact::before{
+
+.contact::before {
     content: "";
     background-image: url(contact.jpg);
     background-repeat: no-repeat;
-    background-size: var(--contact-width),var(--contact-height);
+    background-size: var(--contact-width), var(--contact-height);
     background-position: center;
     position: absolute;
     width: var(--contact-width);
@@ -378,15 +694,15 @@ background-image: url(indian-food-by-sat-bhatti-1-1329903.jpg);
 }
 
 
-.contact-us{
-    width:var(--contact-us-width) ;
+.contact-us {
+    width: var(--contact-us-width);
     height: var(--contact-us-height);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.form{
+.form {
     width: var(--contact-form-width);
     height: var(--contact-form-height);
     display: flex;
@@ -396,22 +712,22 @@ background-image: url(indian-food-by-sat-bhatti-1-1329903.jpg);
     border-top: 5px solid var(--black);
     /* box-sizing: border-box; */
 
-    
+
 }
 
 /* contact->div.contact-us + div.form->form->div.formgroup */
-.formgroup{
+.formgroup {
     font-size: var(--contact-form-fontsize);
     margin: 0.7rem;
 }
 
-.form input{
+.form input {
     font-size: var(--contact-form-input-fontsize);
     padding-left: 0.5rem;
     opacity: 0.8;
 }
 
-.btn{
+.btn {
     font-size: var(--contact-form-input-fontsize);
     background-color: var(--black);
     color: var(--white);
@@ -419,13 +735,17 @@ background-image: url(indian-food-by-sat-bhatti-1-1329903.jpg);
     border: 2px solid var(--white);
     margin-top: 1rem;
 }
-.btn:hover{
+
+.btn:hover {
     opacity: 0.5;
 }
 
+.form-span {
+    font-family: 'Play', sans-serif;
+}
 
 /* ourpartners */
-.ourpartners{
+.ourpartners {
     /* border: 2px solid aquamarine; */
     width: var(--ourpartners-width);
     height: var(--ourpartners-height);
@@ -435,11 +755,12 @@ background-image: url(indian-food-by-sat-bhatti-1-1329903.jpg);
     flex-direction: column;
 
 }
-.ourpartners::before{
+
+.ourpartners::before {
     content: "";
     background-image: url(Bg1.jpg);
     background-repeat: no-repeat;
-    background-size: var(--ourpartners-width),var(--ourpartners-height);
+    background-size: var(--ourpartners-width), var(--ourpartners-height);
     background-position: center;
     position: absolute;
     width: var(--ourpartners-width);
@@ -449,11 +770,11 @@ background-image: url(indian-food-by-sat-bhatti-1-1329903.jpg);
     /* border-radius: 10%; */
 }
 
-.ourpartners-clients-img img{
+.ourpartners-clients-img img {
     width: auto;
     height: 10vh;
     /* margin: margin-y , margin-x */
-   
+
 
 }
 
@@ -461,16 +782,17 @@ background-image: url(indian-food-by-sat-bhatti-1-1329903.jpg);
 
 
 /* footers */
-.footers{
+.footers {
     /* border: 2px solid beige; */
     width: var(--footers-width);
     height: var(--footers-height);
     text-align: center;
+    font-family: 'Play', sans-serif;
 }
 
 
 /* gap-bar */
-.gap{
+.gap {
     width: var(--gap-width);
     height: var(--gap-height);
     /* border: 2px solid orchid; */
