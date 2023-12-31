@@ -33,6 +33,7 @@ app.listen(port,()=>{
 
 // Database
 
+
 mongoose.connect(db_link)
     .then(function (db) {
         console.log("db connected");

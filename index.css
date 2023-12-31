@@ -27,36 +27,6 @@ ourpartners->>>ourpartners-clients
 
 
 
-/* Style for the dropdown container */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Style for the dropdown button (image) */
-.dropdown img {
-    cursor: pointer;
-}
-
-/* Style for the dropdown content */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    /* position: relative; */
-    /* display: inline-block; */
-}
-
-/* Style for the dropdown items */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
 
 
 
@@ -79,7 +49,6 @@ ourpartners->>>ourpartners-clients
 * {
     margin: 0;
     padding: 0;
-    /* z-index: -2; */
 }
 
 :root {
@@ -90,123 +59,175 @@ ourpartners->>>ourpartners-clients
     /* navigation-bar-dimensions */
     --navigation-height: 60vh;
     --navigation-width: 100vw;
-
+    
     --navbar-height: 12vh;
     --navbar-width: 100vw;
-
+    
     --navbarcontent-height: 48vh;
     --navbarcontent-width: 100vw;
-
+    
     /* orderfood */
     --orderfood-height: 40vh;
     --orderfood-width: 100vw;
-
+    
     --orderfood-contents-height: 40vh;
     --orderfood-contents-width: 30vw;
 
-
+    
     --orderfood-contents-1-height: 30vh;
     --orderfood-contents-1-width: var(--orderfood-contents-width);
     --orderfood-contents-2-height: 10vh;
     --orderfood-contents-2-width: var(--orderfood-contents-width);
-
-
-
+    
+    
+    
     /* services-bar-dimensions */
-    --services-height: 180vh;
+    --services-height: 188vh;
     --services-width: 100vw;
-
+    
     --ourservices-height: 20vh;
     --ourservices-width: 100vw;
-
+    
     --services-contents-height: 160vh;
     --services-contents-width: 100vw;
-
+    
     --services-contents-gridflex-height: 40vh;
-    --services-contents-gridflex-width: 33vw;
-
-    --services-contents-gridflex-img-height: 35vh;
-    --services-contents-gridflex-img-width: 32vw;
-
+    --services-contents-gridflex-width: 31vw;
+    
+    
+    --services-contents-gridflex-1-height: 30vh;
+    --services-contents-gridflex-1-width:var(--services-contents-gridflex-width);
+    
+    --services-contents-gridflex-2-height: 10vh;
+    --services-contents-gridflex-2-width: var(--services-contents-gridflex-width);
+    
+    
+    
+    --services-contents-gridflex-1-img-height: 30vh;
+    --services-contents-gridflex-1-img-width: 31vw;
+    
     /* community support */
     --community-height: 40vh;
     --community-width: 100vw;
-
+    
     --partof-community-height: 8vh;
     --partof-community-width: 100vw;
-
+    
     --community-deals-height: 32vh;
     --community-deals-width: 100vw;
-
+    
     --comm-dealbox-height: 32vh;
     --comm-dealbox-width: 25vw;
-
+    
     --comm-dealbox-img-height: 30vh;
     --comm-dealbox-img-width: auto;
 
 
-
-
+    
+    
     /* contact-bar-dimensions */
     --contact-height: 70vh;
     --contact-width: 100vw;
-
+    
     --contact-us-height: 20vh;
     --contact-us-width: 100vw;
-
+    
     --contact-form-height: 50vh;
     --contact-form-width: 100vw;
-
+    
     --contact-form-fontsize: 2.5rem;
     --contact-form-input-fontsize: 1.6rem;
-
-
-
+    
+    
+    
     /* ourpartners-bar-dimensions */
     --ourpartners-height: 50vh;
     --ourpartners-width: 100vw;
-
-
+    
+    
     /* footers-bar-dimensions */
     --footers-height: 5vh;
     --footers-width: 100vw;
-
-
+    
+    
     /* gap-bar-dimensions */
     --gap-height: 2vh;
     --gap-width: 100vw;
-
-
+    
+    
     /* navbar-a-dimensions */
     --navbar-a-fontsize: 1.2rem;
-
-
+    
+    
     /* hprime class dimensions */
     --hprime-fontsize: 4.5rem;
-
+    
     /* welcome-para-dimensions */
     --welcome-para-fontsize: 2rem;
-
+    
     /* servies-contents-gridflex->cuisine */
-    --cuisine-fontsize: 2.2rem;
-
+    --cuisine-fontsize: 2rem;
+    
     /* community heading fontsize */
     --comm-heading-fontsize: 2.5rem;
-
-
-
-
+    
+    
+    
+    
 }
 
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown button (image) */
+.dropdown img {
+    cursor: pointer;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: +2;
+    /* position: relative; */
+    /* display: inline-block; */
+}
+
+/* Style for the dropdown items */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
 body {
     z-index: -4;
+    transition: background-color 0.5s ease-in-out;
     background-color: var(--black);
     color: var(--white);
     overflow-x: hidden;
     scroll-behavior: smooth;
     overflow-y: scroll;
+   
+}
+.theme-button{
+    cursor: pointer;
+    background-color: aquamarine;
+    z-index: -12;
+    color: #fff;
+
 }
 
+body.dark-mode{
+    background-color: var(--white);
+    color: black;
+}
 /* img{
     max-width: 15vw;
     height: auto;
@@ -220,6 +241,7 @@ ul li {
     font-size: var(--hprime-fontsize);
     align-self: center;
     text-align: center;
+    z-index: 5;
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -229,6 +251,14 @@ ul li {
     font-family: 'Play', sans-serif;
 }
 
+.cuisine2 {
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(6, 6, 6);
+    font-size: var(--cuisine-fontsize);
+    z-index: 1;
+    
+
+}
 
 
 
@@ -263,7 +293,7 @@ ul li {
     background-position: center;
     position: absolute;
     z-index: -3;
-    opacity: 0.5;
+    /* opacity: 0.9; */
     width: var(--navigation-width);
     height: var(--navigation-height);
     /* top: 0;
@@ -388,7 +418,7 @@ ul li {
     align-items: center;
     /* justify-self: unset; */
     justify-content: center;
-   
+
 }
 
 .navbar_userinfo a {
@@ -426,21 +456,26 @@ ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 
 }
 
 .navbarContent h1 {
     /* text-align:left; */
+    padding-top: 8vh;
     font-weight: bolder;
+    color: var(--white);
     /* font-style: italic; */
     /* font-family: 'Ubuntu', sans-serif; */
-
+    
     font-size: 7rem;
 }
 
 .welcome-para {
+    font-family: 'Play', sans-serif;
     font-size: var(--welcome-para-fontsize);
+    color: var(--white);
+    z-index: +5;
     /* font-weight: bold; */
 }
 
@@ -571,32 +606,78 @@ ul li {
 .services-contents-gridflex {
     width: var(--services-contents-gridflex-width);
     height: var(--services-contents-gridflex-height);
-    /* border: 2px solid white; */
+    border: 1px solid var(--light-grey);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    /* border-top-right-radius:10% ;
+    border-bottom-left-radius: 10%; */
+    border-radius: 10%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.services-contents-gridflex a{
+    text-decoration: none;
 }
 
 
-.services-contents-gridflex::before {
+.services-contents-gridflex-1::before {
     content: "";
 
     background-image: url(pexels-valeria-boltneva-1639557.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: var(--services-contents-gridflex-img-width), var(--services-contents-gridflex-img-height);
-    width: var(--services-contents-gridflex-img-width);
-    height: var(--services-contents-gridflex-img-height);
+    background-position:center;
+    background-size: var(--services-contents-gridflex-1-img-width), var(--services-contents-gridflex-1-img-height);
+    width: var(--services-contents-gridflex-1-img-width);
+    height: var(--services-contents-gridflex-1-img-height);
     position: absolute;
-    border-radius: 10%;
+    /* border-radius: 10%; */
     z-index: -2;
-    opacity: 0.5;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    /* opacity: 0.7; */
 
 
 
 }
+
+.services-contents-gridflex-1 {
+    /* border: 2px solid magenta; */
+    width: var(--services-contents-gridflex-1-width);
+    height: var(--services-contents-gridflex-1-height);
+
+
+}
+
+.services-contents-gridflex-2 {
+    /* border: 2px solid white; */
+    width: var(--services-contents-gridflex-2-width);
+    height: var(--services-contents-gridflex-2-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-contents-gridflex-2::before {
+    content: "";
+    background-color: var(--white) ;
+   
+    position: absolute;
+    z-index: -3;
+    opacity: 1;
+    width: var(--services-contents-gridflex-2-width);
+    height: var(--services-contents-gridflex-2-height);
+
+   
+    border-bottom-right-radius:5ch;
+    border-bottom-left-radius: 5ch;
+
+}
+
 
 
 #scg2::before {
@@ -649,8 +730,8 @@ ul li {
 .community {
     width: var(--community-width);
     height: var(--community-height);
-    background-color: var(--black);
-    color: var(--white);
+    /* background-color: var(--black); */
+    /* color: var(--white); */
     display: flex;
     flex-direction: column;
 
@@ -736,7 +817,7 @@ ul li {
     width: var(--contact-width);
     height: var(--contact-height);
     z-index: -1;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     /* border-radius: 10%; */
 }
 
@@ -812,7 +893,7 @@ ul li {
     position: absolute;
     width: var(--ourpartners-width);
     height: var(--ourpartners-height);
-    z-index: -2;
+    z-index: -5;
     opacity: 0.4;
     /* border-radius: 10%; */
 }
@@ -864,20 +945,20 @@ ul li {
     color: black;
 }
 
-.Register-container{
+.Register-container {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     padding: 20px;
-    border: 2px solid
-    magenta;
+    border: 2px solid magenta;
     background-color: var(--light-grey);
     color: var(--white);
     z-index: 1000;
 
 }
+
 /* Styles for the overlay background */
 .overlay {
     display: none;
@@ -894,7 +975,8 @@ ul li {
 .login-form {
     text-align: center;
 }
-.register-form{
+
+.register-form {
 
     text-align: center;
 }
@@ -905,4 +987,3 @@ ul li {
     font-weight: bold;
     color: #060606;
 }
-

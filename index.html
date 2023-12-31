@@ -123,14 +123,31 @@
                             </div>
                         </li>
                         <li class="items_2"><a href="#"><img src="cart.png" alt=""></a></li>
-                        <li class="items_2"><a href="#"><img src="list.png" alt=""></a></li>
+                        <li class="items_2">
+                            <!-- <a href="#">
+                                <img src="list.png" alt="">
+                            </a> -->
+                            <div class="dropdown">
+                                <!-- Image button -->
+                                <img src="list.png" alt="Button Image" onclick="toggleDropdownMenu()"
+                                    class="dropdown-button">
+                                <!-- Dropdown content -->
+                                <div class="dropdown-content" id="myDropdownMenu">
+                                    <!-- <a href="#" onclick="trackYourOrder()">track_order</a> -->
+                                    <button class="theme-button" onclick="toggleTheme()">Change Theme</button>
+                                    <!-- <a href="#" onclick="getUserLocation()">current_location</a> -->
+                                    <!-- <a href="#">Option 3</a> -->
+                                </div>
+
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="navbarContent">
                 <h1 class="hprime">Route66</h1>
-                <!-- <p class="welcome-para">find the best food near you
-                </p> -->
+                <p class="welcome-para">find the best food near you . All at one Place
+                </p>
                 <!-- <div class="dropdown-content" id="myDropdown">
                         <a href="#">Option 1</a>
                         <a href="#">Option 2</a>
@@ -174,46 +191,119 @@
                 </h1>
             </div>
             <div class="services-contents">
-                <div class="services-contents-gridflex" id="scg1">
-                    <h3 class="cuisine">Burgers</h3>
-                   
+
+
+                <div class="services-contents-gridflex">
+                    <a href="youtube.com" target="_blank">
+                        <!-- <h3 class="cuisine">Burgers</h3> -->
+                        <div class="services-contents-gridflex-1" id="scg1"></div>
+                        <div class="services-contents-gridflex-2">
+                            <h3 class="cuisine2">Burgers</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="services-contents-gridflex" id="scg2">
-                    <h3 class="cuisine">Japanese</h3>
+                <div class="services-contents-gridflex">
+                    <!-- <h3 class="cuisine">Japanese</h3> -->
+                    <a href="youtube.com" target="_blank">
+                        <div class="services-contents-gridflex-1" id="scg2"></div>
+                        <div class="services-contents-gridflex-2">
+                            <h3 class="cuisine2">Japanese</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="services-contents-gridflex" id="scg3">
-                    <h3 class="cuisine">Chineese</h3>
+                <div class="services-contents-gridflex">
+                    <!-- <h3 class="cuisine">Chineese</h3> -->
+                    <a href="youtube.com" target="_blank">
+                        <div class="services-contents-gridflex-1" id="scg3"></div>
+                        <div class="services-contents-gridflex-2">
+                            <h3 class="cuisine2">Chineese</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="services-contents-gridflex" id="scg4">
-                    <h3 class="cuisine">Korean</h3>
+                <div class="services-contents-gridflex">
+                    <!-- <h3 class="cuisine">Korean</h3> -->
+                    <a href="youtube.com" target="_blank">
+                        <div class="services-contents-gridflex-1" id="scg4"></div>
+                        <div class="services-contents-gridflex-2">
+                            <h3 class="cuisine2">Korean</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="services-contents-gridflex" id="scg5">
-                    <h3 class="cuisine">Dominos</h3>
+                <div class="services-contents-gridflex">
+                    <!-- <h3 class="cuisine">Dominos</h3> -->
+                    <a href="youtube.com" target="_blank">
+                        <div class="services-contents-gridflex-1" id="scg5"></div>
+                        <div class="services-contents-gridflex-2">
+                            <h3 class="cuisine2">Dominos</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="services-contents-gridflex" id="scg6">
-                    <h3 class="cuisine">Pizza Hut</h3>
+                <div class="services-contents-gridflex">
+                    <!-- <h3 class="cuisine">Pizza Hut</h3> -->
+                    <a href="youtube.com" target="_blank">
+                        <div class="services-contents-gridflex-1" id="scg6"></div>
+                        <div class="services-contents-gridflex-2">
+                            <h3 class="cuisine2">Pizza</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="services-contents-gridflex" id="scg7">
-                    <h3 class="cuisine">Non-Veg</h3>
+                <div class="services-contents-gridflex">
+                    <!-- <h3 class="cuisine">Non-Veg</h3> -->
+                    <a href="youtube.com" target="_blank">
+                        <div class="services-contents-gridflex-1" id="scg7"></div>
+                        <div class="services-contents-gridflex-2">
+                            <h3 class="cuisine2">Non-veg</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="services-contents-gridflex" id="scg8">
-                    <h3 class="cuisine">Chaat</h3>
+                <div class="services-contents-gridflex">
+                    <!-- <h3 class="cuisine">Chaat</h3> -->
+                    <a href="youtube.com" target="_blank">
+                        <div class="services-contents-gridflex-1" id="scg8"></div>
+                        <div class="services-contents-gridflex-2">
+                            <h3 class="cuisine2">Chaat</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="services-contents-gridflex" id="scg9">
-                    <h3 class="cuisine">Burgers</h3>
+                <div class="services-contents-gridflex">
+                    <!-- <h3 class="cuisine">Burgers</h3> -->
+                    <a href="youtube.com" target="_blank">
+                        <div class="services-contents-gridflex-1" id="scg9"></div>
+                        <div class="services-contents-gridflex-2">
+                            <h3 class="cuisine2">Burgers</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="services-contents-gridflex" id="scg10">
-                    <h3 class="cuisine">A la Carte</h3>
+                <div class="services-contents-gridflex">
+                    <!-- <h3 class="cuisine">A la Carte</h3> -->
+                    <a href="youtube.com" target="_blank">
+                        <div class="services-contents-gridflex-1" id="scg10"></div>
+                        <div class="services-contents-gridflex-2">
+                            <h3 class="cuisine2">A la Carte</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="services-contents-gridflex" id="scg11">
-                    <h3 class="cuisine">Snacks</h3>
+                <div class="services-contents-gridflex">
+                    <!-- <h3 class="cuisine">Snacks</h3> -->
+                    <a href="youtube.com" target="_blank">
+                        <div class="services-contents-gridflex-1" id="scg11"></div>
+                        <div class="services-contents-gridflex-2">
+                            <h3 class="cuisine2">Snacks</h3>
+                        </div>
+                    </a>
                 </div>
-                <div class="services-contents-gridflex" id="scg12">
-                    <h3 class="cuisine">Beverages</h3>
+                <div class="services-contents-gridflex">
+                    <!-- <h3 class="cuisine">Beverages</h3> -->
+                    <a href="youtube.com" target="_blank">
+                        <div class="services-contents-gridflex-1" id="scg12"></div>
+                        <div class="services-contents-gridflex-2">
+                            <h3 class="cuisine2">Beverages</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- <div class="gap"></div> -->
+        <div class="gap"></div>
         <div class="community">
             <div class="partof_community">
                 <h3 class="comm_heading">Be part of our community</h3>
@@ -296,7 +386,7 @@
 
 
 
-
+    <!-- toggleDropdown of the users -->
     <script>
         // JavaScript to toggle the dropdown
         function toggleDropdown() {
@@ -317,6 +407,7 @@
             }
         }
     </script>
+    <!-- toggle dropdown of location -->
     <script>
         // JavaScript to toggle the dropdown
         function toggleDropdownLocation() {
@@ -337,44 +428,68 @@
             }
         }
     </script>
-
-<script>
-    function getUserLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition, showError);
-        } else {
-            alert("Geolocation is not supported by this browser.");
+    <!-- toggle dropdown of the menu -->
+    <script>
+        // JavaScript to toggle the dropdown
+        function toggleDropdownMenu() {
+            var dropdown = document.getElementById("myDropdownMenu");
+            dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
         }
-    }
 
-    function showPosition(position) {
-        alert("Latitude: " + position.coords.latitude + "\nLongitude: " + position.coords.longitude);
-    }
-
-    function showError(error) {
-        switch(error.code) {
-            case error.PERMISSION_DENIED:
-                alert("User denied the request for Geolocation.");
-                break;
-            case error.POSITION_UNAVAILABLE:
-                alert("Location information is unavailable.");
-                break;
-            case error.TIMEOUT:
-                alert("The request to get user location timed out.");
-                break;
-            case error.UNKNOWN_ERROR:
-                alert("An unknown error occurred.");
-                break;
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropdown-button')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === 'block') {
+                        openDropdown.style.display = 'none';
+                    }
+                }
+            }
         }
-    }
-</script>
+    </script>
 
-<script>
-    function trackYourOrder(){
-        alert("You have No orders to track");
-    }
-</script>
+    <!-- userlocation func -->
+    <script>
+        function getUserLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
 
+        function showPosition(position) {
+            alert("Latitude: " + position.coords.latitude + "\nLongitude: " + position.coords.longitude);
+        }
+
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    alert("User denied the request for Geolocation.");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Location information is unavailable.");
+                    break;
+                case error.TIMEOUT:
+                    alert("The request to get user location timed out.");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    alert("An unknown error occurred.");
+                    break;
+            }
+        }
+    </script>
+
+    <!-- travk order function -->
+    <script>
+        function trackYourOrder() {
+            alert("You have No orders to track");
+        }
+    </script>
+
+    <!-- open login func -->
     <script>
         // JavaScript functions to open and close the login window
         function openLogin() {
@@ -387,6 +502,8 @@
             document.getElementById("overlay").style.display = "none";
         }
     </script>
+
+    <!-- open register func -->
     <script>
         // JavaScript functions to open and close the login window
         function openRegister() {
@@ -399,6 +516,16 @@
             document.getElementById("overlay").style.display = "none";
         }
     </script>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+
+            // Toggle the 'dark-mode' class on the body
+            body.classList.toggle('dark-mode');
+        }
+    </script>
+
 
 </body>
 
