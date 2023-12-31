@@ -27,6 +27,37 @@ ourpartners->>>ourpartners-clients
 
 
 
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown button (image) */
+.dropdown img {
+    cursor: pointer;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    /* position: relative; */
+    /* display: inline-block; */
+}
+
+/* Style for the dropdown items */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
 
 
 
@@ -147,7 +178,7 @@ ourpartners->>>ourpartners-clients
 
 
     /* navbar-a-dimensions */
-    --navbar-a-fontsize: 1.8rem;
+    --navbar-a-fontsize: 1.2rem;
 
 
     /* hprime class dimensions */
@@ -253,6 +284,7 @@ ul li {
     /* align-self: normal; */
     /* flex: 1; */
     flex-direction: row;
+    /* position: fixed; */
 
     /* border: 2px solid rgb(20, 46, 196); */
 
@@ -276,7 +308,7 @@ ul li {
     /* flex: 0.5; */
     width: 50vw;
     /* border: 2px solid magenta; */
-    height: auto;
+    height: var(--navbar-height);
     display: flex;
     align-items: center;
 }
@@ -327,26 +359,41 @@ ul li {
     margin-right: 2.5rem;
 }
 
+
+
+
 .navbar_userinfo {
-    /* display: flex; */
-    align-items: flex-end;
-    /* flex: 0.5; */
     width: 50vw;
-    height: auto;
+    height: var(--navbar-height);
     /* border: 2px solid mediumaquamarine; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
     cursor: pointer;
+    flex-direction: row;
+    /* position: fixed; */
+}
 
-  
+.navbar-ul-right {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
 
-
+.navbar-ul-right li {
+    display: flex;
+    width: 8vw;
+    height: var(--navbar-height);
+    /* border: 2px solid mediumseagreen; */
+    align-items: center;
+    /* justify-self: unset; */
+    justify-content: center;
+   
 }
 
 .navbar_userinfo a {
-    margin-left: 0.2rem;
-    margin-right: 1rem;
+    /* margin-left: 0.2rem; */
+    /* margin-right: 1rem; */
 
 }
 
@@ -355,18 +402,15 @@ ul li {
 .navbar_userinfo img {
     width: 2.5vw;
     height: auto;
-    
+    /* background: none; */
+
 
 }
-/* .navbar_userinfo a img:hover {
-   
-   width: 5vw;
-   height: auto;
-   align-self: center;
-   
 
+.navbar_userinfo a img:hover {
+    /* filter:grayscale(100%); */
 
-} */
+}
 
 
 
@@ -389,8 +433,9 @@ ul li {
 .navbarContent h1 {
     /* text-align:left; */
     font-weight: bolder;
-    font-style: italic;
-    font-family: 'Ubuntu', sans-serif;
+    /* font-style: italic; */
+    /* font-family: 'Ubuntu', sans-serif; */
+
     font-size: 7rem;
 }
 
@@ -528,6 +573,7 @@ ul li {
     height: var(--services-contents-gridflex-height);
     /* border: 2px solid white; */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -551,6 +597,7 @@ ul li {
 
 
 }
+
 
 #scg2::before {
     background-image: url(top-view-fresh-delicious-chinese-food-dark-background.jpg);
@@ -797,3 +844,65 @@ ul li {
     height: var(--gap-height);
     /* border: 2px solid orchid; */
 }
+
+
+/* important styles */
+
+
+
+/* Styles for the login container */
+.login-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 1000;
+    color: black;
+}
+
+.Register-container{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border: 2px solid
+    magenta;
+    background-color: var(--light-grey);
+    color: var(--white);
+    z-index: 1000;
+
+}
+/* Styles for the overlay background */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Styles for the login form inside the container */
+.login-form {
+    text-align: center;
+}
+.register-form{
+
+    text-align: center;
+}
+
+/* Style for the close button */
+.close-button {
+    cursor: pointer;
+    font-weight: bold;
+    color: #060606;
+}
+
