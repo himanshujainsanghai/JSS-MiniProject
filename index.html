@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Online-Food-Ordering-Website</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" media="screen and (max-width:1000px)" href="index2.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width:1000px)" href="index2.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Ubuntu:ital,wght@1,700&display=swap"
@@ -17,6 +17,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Genos:ital,wght@1,800&family=MuseoModerno:ital,wght@1,600&display=swap"
+        rel="stylesheet">
     <!-- <script src="index.js"></script> -->
     <script>
         function smallWindow() {
@@ -25,50 +30,162 @@
     </script>
 
 
+    <!-- <script src="app.js"></script> -->
+
 
 
 </head>
 
+
 <body>
-    <div class="homepage">
+    <div class="homepage" id="home1">
         <div class="overlay" id="overlay"></div>
         <div class="login-container" id="loginContainer">
+            <div class="login_container_1">
+                <div class="login1">
+
+                    <span>Login</span>
+                </div>
+                <div onclick="closeLogin()" class="login2">
+                    <span>X</span>
+                </div>
+
+            </div>
             <div class="login-form">
                 <!-- <span class="close-button" onclick="closeLogin()">X</span> -->
-                <h2>Login</h2>
+                <!-- <h2>Login</h2> -->
                 <!-- Your login form goes here -->
                 <form>
                     <!-- Username and password fields go here -->
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
+                    <!-- <label for="username">Username:</label> -->
+                    <input class="form_content2" type="email" id="email_login" name="email"  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"  onchange="toggleButton2()"
+                        value="Email" required>
+                    <button id="sendEmail" disabled onclick="Logsendmail()">send</button>
                     <br>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
+                    <!-- <br> -->
+                    <div id="timer">02:00</div>
+                    <!-- <label for="password">Password:</label> -->
+                    <div id="inputs_loginOTP" class="inputsOTP">
+                        <input class="input_2" id="input7" type="text" inputmode="numeric" maxlength="1" />
+                        <input class="input_2" id="input8" type="text" inputmode="numeric" maxlength="1" />
+                        <input class="input_2" id="input9" type="text" inputmode="numeric" maxlength="1" />
+                        <input class="input_2" id="input10" type="text" inputmode="numeric" maxlength="1" />
+                        <input class="input_2" id="input11" type="text" inputmode="numeric" maxlength="1" />
+                        <input class="input_2" id="input12" type="text" inputmode="numeric" maxlength="1" />
+                    </div>
                     <br>
-                    <input type="submit" value="Login">
-                    <button class="close-button" onclick="closeLogin()">close</button>
+                    <button id="login_button" class="allsubmit" onclick="login()">Log_in</button>
+                    <!-- <input type="submit" value="Login"> -->
+                    <!-- <button class="close-button" onclick="closeLogin()">close</button> -->
                 </form>
             </div>
-        </div>
-        <div class="Register-container" id="RegisterContainerID">
-            <div class="register-form">
-                <!-- <span class="close-button" onclick="closeLogin()">X</span> -->
-                <h2>Register</h2>
-                <!-- Your login form goes here -->
-                <form>
-                    <!-- Username and password fields go here -->
-                    <label for="username">Username:</label>
-                    <input type="text" id="username_register" name="username" required>
-                    <br>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password_register" name="password" required>
-                    <br>
-                    <input type="submit" value="Sign_Up">
-                    <button class="close-button" onclick="closeLogin()">close</button>
-                </form>
+            <div class="login_container_3">
+
+                <div class="login_container_3_1">
+                    <div class="lc311"></div>
+                    <div class="lc312"><span>or</span></div>
+                    <div class="lc313"></div>
+                </div>
+                <div class="login_container_3_2">
+
+                    <div class="button-google">
+                        <img src="google.png" alt="">
+                        <span>Continue with Google</span>
+                    </div>
+
+
+                </div>
+
+
             </div>
         </div>
 
+        <!-- Registration part -->
+        <div class="Register-container" id="RegisterContainerID">
+            <div class="register_container_heading">
+                <div class="register_container_heading_maincontent">
+
+                    <h2 class="hprime">Register</h2>
+                </div>
+                <div onclick="closeRegister()" class="register_container_heading_close">
+                    <h1>X</h1>
+
+                </div>
+            </div>
+            <div class="register-form">
+                <!-- <span class="close-button" onclick="closeLogin()">X</span> -->
+                <!-- <h2 class="formheading">Register</h2> -->
+                <!-- Your login form goes here -->
+                <form>
+                    <!-- Username and password fields go here -->
+                    <!-- <label for="name"></label> -->
+                    <input class="form_content" type="text" id="name_register" name="name" value="Full Name" required>
+
+                    <br>
+                    <!-- <label for="email">Email:</label> -->
+                    <input class="form_content" type="email" id="email_register" name="email" value="Email" required>
+                    <br>
+                    <!-- <label for="password">Password:</label> -->
+                    <!-- <input class="form_content" type="password" id="password_register"  value="Password" name="password" required> -->
+                    <!-- <br> -->
+                    <!-- <label for="confirmpassword">Confirm_password:</label> -->
+                    <!-- <input class="form_content" type="password" name="Confirm_password_register" id="confirmpassword" value="confirmpassword"> -->
+                    <!-- <br> -->
+                    <!-- <input type="submit" value="Sign_Up"> -->
+                    <!-- <button class="close-button" onclick="closeLogin()">close</button> -->
+                    <br>
+                    <label>
+                        <input type="checkbox" id="enableButton" aria-checked="false" onchange="toggleButton()">
+                    </label>
+                    <span>I agree to the following <a href="#" class="a_forms">Terms & conditions</a></span>
+                </form>
+            </div>
+            <div class="register_container_footer">
+                <div class="register_container_footer_maincontent">
+                    <input class="allsubmit" disabled id="myButton" type="submit" value="Create Account"
+                        onclick="submitForm()">
+                    <!-- <button class="allsubmit" role="button" disabled value="Create Account"></button> -->
+
+                </div>
+                <div class="register_container_footer_login">
+                    already have an account?<a href="#" onclick="closeRegisterOpenLogin()" class="a_forms">Log in</a>
+                </div>
+
+                <!-- <button class="close-button" onclick="closeLogin()">close</button> -->
+
+            </div>
+        </div>
+        <div class="otpverify_register" id="otpverify_registerID">
+            <div class="otp_1">
+                <span>
+                    We have sent an otp to your email address
+                </span>
+                <span id="closeRegister_bttn" onclick="closeVerify()">X</span>
+                <br>
+                <img src="mail.png" alt="email">
+            </div>
+            <div class="otp_container_2">
+                <div id="inputs" class="inputs">
+                    <input class="input" id="input1" type="text" inputmode="numeric" maxlength="1" />
+                    <input class="input" id="input2" type="text" inputmode="numeric" maxlength="1" />
+                    <input class="input" id="input3" type="text" inputmode="numeric" maxlength="1" />
+                    <input class="input" id="input4" type="text" inputmode="numeric" maxlength="1" />
+                    <input class="input" id="input5" type="text" inputmode="numeric" maxlength="1" />
+                    <input class="input" id="input6" type="text" inputmode="numeric" maxlength="1" />
+                </div>
+            </div>
+            <div class="verify_otp_box_3">
+                <button role="button" id="verify_otp_button" class="allsubmit" onclick="verifyOTP()">Verify</button>
+                <!-- <button onclick="closeverify()">close</button> -->
+                <!-- <button onclick="login()">Login</button> -->
+                <br>
+                <br>
+                <br>
+                <span>OTP not received? <a href="#">Resend OTP</a></span>
+            </div>
+        </div>
+
+        <!-- content -->
         <div class="navigation">
             <div class="navbar">
                 <div class="navbar_logo">
@@ -97,7 +214,8 @@
                                 <!-- Dropdown content -->
                                 <div class="dropdown-content" id="myDropdown">
                                     <a href="#" onclick="openLogin()">Log_in</a>
-                                    <a href="#" onclick="openRegister()">Register</a>
+                                    <a href="#" onclick="openRegister()">Sign up</a>
+                                    <!-- <a href="#" onclick="OpenOtpVerify()">otp</a> -->
                                     <!-- <a href="#">Option 3</a> -->
                                 </div>
 
@@ -122,7 +240,38 @@
 
                             </div>
                         </li>
-                        <li class="items_2"><a href="#"><img src="cart.png" alt=""></a></li>
+                        <li class="items_2">
+                            <div class="dropdown">
+                                <img src="cart.png" alt="Button Image" onclick="toggleDropdownCart()"
+                                    class="dropdown-button">
+
+                                <div class="dropdown-content" id="myDropdownCart">
+                                    <!-- <a href="#" onclick="trackYourOrder()">traer</a> -->
+                                    <!-- <a href="#" onclick="getUserLocation()">cuion</a> -->
+                                    <div class="triangle" id="trianglecart"></div>
+                                    <div class="cartcontent">
+
+                                        <div class="cart1">
+                                            <h3>Your Cart</h3>
+                                        </div>
+                                        <div class="cart2">
+                                            <div class="cart21">
+
+                                                <img src="empty-cart.png" id="imgcart" alt="">
+                                            </div>
+                                            <div class="cart22">
+
+                                                <h6>There are 0 items in your Cart</h6>
+                                            </div>
+                                        </div>
+                                        <div class="cart3">
+                                            <h4>Login</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
                         <li class="items_2">
                             <!-- <a href="#">
                                 <img src="list.png" alt="">
@@ -133,10 +282,32 @@
                                     class="dropdown-button">
                                 <!-- Dropdown content -->
                                 <div class="dropdown-content" id="myDropdownMenu">
-                                    <!-- <a href="#" onclick="trackYourOrder()">track_order</a> -->
-                                    <button class="theme-button" onclick="toggleTheme()">Change Theme</button>
-                                    <!-- <a href="#" onclick="getUserLocation()">current_location</a> -->
-                                    <!-- <a href="#">Option 3</a> -->
+
+                                    <div class="triangle">
+
+                                    </div>
+                                    <div class="menucontent">
+                                        <div class="menu1">
+
+                                            <h3>More</h3>
+                                        </div>
+                                        <div class="menu2">
+                                            <div class="menu21"><img src="offer.png" alt="" srcset=""></div>
+                                            <div class="menu22"><img src="order.png" alt="" srcset=""></div>
+                                        </div>
+                                        <div class="menu3" onclick="toggleTheme()">
+                                            <!-- <button class="theme-button" onclick="toggleTheme()">Change Theme</button> -->
+                                            <span>Toggle Theme</span>
+
+                                        </div>
+                                        <div class="menu4"><a href="#">Services</a></div>
+                                        <div class="menu5">
+                                            <a href="#">Home</a>
+                                        </div>
+                                        <div class="menu6"><a href="#">Chatbot</a></div>
+
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -145,7 +316,7 @@
                 </div>
             </div>
             <div class="navbarContent">
-                <h1 class="hprime">Route66</h1>
+                <h1>route66</h1>
                 <p class="welcome-para">find the best food near you . All at one Place
                 </p>
                 <!-- <div class="dropdown-content" id="myDropdown">
@@ -301,8 +472,37 @@
                         </div>
                     </a>
                 </div>
+                <div class="services-contents-gridflex">
+                    <!-- <h3 class="cuisine">Beverages</h3> -->
+                    <a href="youtube.com" target="_blank">
+                        <div class="services-contents-gridflex-1" id="scg13"></div>
+                        <div class="services-contents-gridflex-2">
+                            <h3 class="cuisine2">Cakes</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="services-contents-gridflex">
+                    <!-- <h3 class="cuisine">Beverages</h3> -->
+                    <a href="youtube.com" target="_blank">
+                        <div class="services-contents-gridflex-1" id="scg14"></div>
+                        <div class="services-contents-gridflex-2">
+                            <h3 class="cuisine2">Indian</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="services-contents-gridflex">
+                    <!-- <h3 class="cuisine">Beverages</h3> -->
+                    <a href="youtube.com" target="_blank">
+                        <div class="services-contents-gridflex-1" id="scg15"></div>
+                        <div class="services-contents-gridflex-2">
+                            <h3 class="cuisine2">Healthy</h3>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
+        <div class="gap"></div>
+        <div class="gap"></div>
         <div class="gap"></div>
         <div class="community">
             <div class="partof_community">
@@ -326,6 +526,9 @@
             </div>
         </div>
         <div class="gap"></div>
+
+
+
         <div class="contact" id="contact1">
             <div class="contact-us">
                 <h1 class="hprime">Contact-us</h1>
@@ -349,7 +552,7 @@
                     </div>
                     <div class="formgroup">
                         <label for="name"><span class="form-span">Address:</span></label>
-                        <!-- <textarea name="message" id="message" cols="30" rows="10"></textarea> -->
+                        >
                         <input type="text" name="name" id="name" placeholder="Enter Your Address" required>
 
                     </div>
@@ -361,7 +564,12 @@
                 </form>
             </div>
         </div>
-        <div class="gap"></div>
+
+
+        <!-- <div class="gap"></div> -->
+
+
+
         <div class="ourpartners" id="ourpartners1">
             <div class="ourpartners-clients">
                 <h1 class="hprime">Our Clients</h1>
@@ -378,9 +586,61 @@
             </div>
 
         </div>
-        <div class="gap"></div>
+
+
+        <!-- <div class="gap"></div> -->
         <div class="footers">
-            Copyright &copy; www.route66.com .All rights reserved!
+            <div class="footer_1">
+                <h4>route66</h4>
+            </div>
+            <div class="footer_2">
+                <div class="footer_2_1">
+                    <h5>About route66</h5>
+                    <span>Who We Are</span>
+                    <span>Blog</span>
+                    <span>Work With Us</span>
+                    <span>Report Fraud</span>
+                    <span>Contact US</span>
+
+                </div>
+                <div class="footer_2_1">
+                    <h5>Learn More</h5>
+
+                    <span>Privacy</span>
+                    <span>Security</span>
+                    <span>Terms</span>
+                    <span>Sitemap</span>
+
+                </div>
+                <div class="footer_2_1">
+                    <h5>FOR RESTAURANTS</h5>
+                    <span>Partner With US</span>
+                    <span>Apps For You</span>
+
+
+                </div>
+                <div class="footer_2_1">
+                    <h5>Social Links</h5>
+                    <img src="linkedin.png" alt="">
+                    <img src="instagram.png" alt="">
+                    <img src="youtube.png" alt="">
+                    <img src="twitter.png" alt="">
+                    <img src="facebook.png" alt="">
+                </div>
+
+            </div>
+            <div class="footer_3">
+                <span class="footer_3_1">
+
+                    By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and
+                    Content Policies. All trademarks are properties of their respective owners. Copyright ©
+                    www.route66.com . All rights reserved
+                </span>
+                <span class="footer_3_2">
+
+                    Copyright &copy; www.route66.com .All rights reserved!
+                </span>
+            </div>
         </div>
     </div>
 
@@ -450,7 +710,28 @@
         }
     </script>
 
-    <!-- userlocation func -->
+    <!-- toggle cart -->
+    <script>
+        function toggleDropdownCart() {
+            var dropdown = document.getElementById("myDropdownCart");
+            dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropdown-button')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === 'block') {
+                        openDropdown.style.display = 'none';
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Getuserlocation func -->
     <script>
         function getUserLocation() {
             if (navigator.geolocation) {
@@ -461,9 +742,29 @@
         }
 
         function showPosition(position) {
-            alert("Latitude: " + position.coords.latitude + "\nLongitude: " + position.coords.longitude);
-        }
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
 
+            // alert("Latitude: " + position.coords.latitude + "\nLongitude: " + position.coords.longitude);
+            // console.log("latitude : " + position.coords.latitude);
+            // console.log("longitude : " + position.coords.longitude);
+            reverseGeocode(latitude, longitude);
+        }
+        function reverseGeocode(latitude, longitude) {
+            const apiUrl = `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`;
+
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    // Process the reverse geocoding result
+                    const address = data.display_name;
+                    alert("Location: " + address);
+                })
+                .catch(error => {
+                    console.error('Error in reverse geocoding:', error);
+                    alert("Error retrieving location information.");
+                });
+        }
         function showError(error) {
             switch (error.code) {
                 case error.PERMISSION_DENIED:
@@ -482,7 +783,7 @@
         }
     </script>
 
-    <!-- travk order function -->
+    <!-- track order function -->
     <script>
         function trackYourOrder() {
             alert("You have No orders to track");
@@ -495,11 +796,25 @@
         function openLogin() {
             document.getElementById("loginContainer").style.display = "block";
             document.getElementById("overlay").style.display = "block";
+
         }
 
         function closeLogin() {
             document.getElementById("loginContainer").style.display = "none";
             document.getElementById("overlay").style.display = "none";
+
+        }
+    </script>
+
+    <!-- Close register and open Log in -->
+    <script>
+        function closeRegisterOpenLogin() {
+
+            document.getElementById("RegisterContainerID").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("loginContainer").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+
         }
     </script>
 
@@ -511,12 +826,13 @@
             document.getElementById("overlay").style.display = "block";
         }
 
-        function closeLogin() {
+        function closeRegister() {
             document.getElementById("RegisterContainerID").style.display = "none";
             document.getElementById("overlay").style.display = "none";
         }
     </script>
 
+    <!-- change the theme -->
     <script>
         function toggleTheme() {
             const body = document.body;
@@ -525,6 +841,361 @@
             body.classList.toggle('dark-mode');
         }
     </script>
+
+    <!-- toggle input as enable and disable -->
+    <script>
+        function toggleButton() {
+            const enableButton = document.getElementById('enableButton');
+            const myButton = document.getElementById('myButton');
+
+            // Enable the button if the checkbox is checked, otherwise disable it
+            myButton.disabled = !enableButton.checked;
+            if (enableButton.checked) {
+                myButton.style.opacity = 1;
+
+            }
+            else {
+                myButton.style.opacity = 0.5;
+            }
+        }
+
+        function toggleButton2() {
+            const emailInput = document.getElementById('email_login');
+            const sendbutton = document.getElementById('sendEmail');
+
+            sendbutton.disabled = !emailInput.value.trim();
+            if (sendbutton.disabled == false) {
+                sendbutton.style.opacity = 1;
+            }
+
+        }
+
+    </script>
+
+    <!-- get email -->
+    <script>
+        function submitForm() {
+            const username = document.getElementById('name_register').value;
+            const email = document.getElementById('email_register').value;
+            // alert("this");
+            fetch('/send-otp', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email: email,
+                    username: username
+                }),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data); // Handle server response
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+
+            // const checkIfExists = async (email) => {
+            //     try {
+            //         const response = await fetch('/send-otp', {
+            //             method: 'POST',
+            //             headers: {
+            //                 'Content-Type': 'application/json',
+            //             },
+            //             body: JSON.stringify({ data: email }),
+            //         });
+
+            //         if (!response.ok) {
+            //             throw new Error('Network response was not ok');
+            //         }
+
+            //         const result = await response.json();
+
+            //         // Process the result (e.g., show a message to the user)
+            //         console.log(result);
+            //     } catch (error) {
+            //         console.error('Error:', error);
+            //     }
+            // };
+
+
+
+            // if (checkIfExists) {
+            //     alert("user already registered! try using a new email id .  ");
+
+            // } else {
+            // }
+
+            // open verify-otp box
+            document.getElementById("otpverify_registerID").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+
+            // close register-box
+            document.getElementById("RegisterContainerID").style.display = "none";
+            // document.getElementById("overlay").style.display = "none";
+
+
+
+        }
+
+    </script>
+
+    <!-- open otp verification menu -->
+    <script>
+        function OpenOtpVerify() {
+            document.getElementById("otpverify_registerID").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+
+        }
+
+        function closeVerify() {
+            document.getElementById("otpverify_registerID").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+
+        }
+    </script>
+
+    <!-- otp input fields -->
+    <script>
+        // script.js
+        const inputs = document.getElementById("inputs");
+
+        inputs.addEventListener("input", function (e) {
+            const target = e.target;
+            const val = target.value;
+
+            if (isNaN(val)) {
+                target.value = "";
+                return;
+            }
+
+            if (val != "") {
+                const next = target.nextElementSibling;
+                if (next) {
+                    next.focus();
+                }
+            }
+        });
+
+        inputs.addEventListener("keyup", function (e) {
+            const target = e.target;
+            const key = e.key.toLowerCase();
+
+            if (key == "backspace" || key == "delete") {
+                target.value = "";
+                const prev = target.previousElementSibling;
+                if (prev) {
+                    prev.focus();
+                }
+                return;
+            }
+        });
+        const inputs2 = document.getElementById("inputs_loginOTP");
+
+        inputs2.addEventListener("input", function (e) {
+            const target = e.target;
+            const val = target.value;
+
+            if (isNaN(val)) {
+                target.value = "";
+                return;
+            }
+
+            if (val != "") {
+                const next = target.nextElementSibling;
+                if (next) {
+                    next.focus();
+                }
+            }
+        });
+
+        inputs2.addEventListener("keyup", function (e) {
+            const target = e.target;
+            const key = e.key.toLowerCase();
+
+            if (key == "backspace" || key == "delete") {
+                target.value = "";
+                const prev = target.previousElementSibling;
+                if (prev) {
+                    prev.focus();
+                }
+                return;
+            }
+        });
+
+    </script>
+
+
+
+    <!-- verify-otp -->
+    <script>
+        async function verifyOTP() {
+            const email = document.getElementById('email_register').value;
+            const otp = document.getElementById('input1').value +
+                document.getElementById('input2').value +
+                document.getElementById('input3').value +
+                document.getElementById('input4').value +
+                document.getElementById('input5').value +
+                document.getElementById('input6').value;
+            // alert("button clicked :");
+            // console.log(otp);
+            try {
+                const response = await fetch('http://localhost:3000/verify-otp', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email, otp }),
+                });
+
+
+                if (response.ok) {
+                    const data = await response.json();
+                    const token = data.jwt_token;
+
+                    // Store the token securely (e.g., in a secure HTTP-only cookie or local storage)
+                    document.cookie = `LoggedInUser=${token}; Secure; HttpOnly; SameSite=Strict`;
+
+                    // Redirect to the userloggedin page after successful OTP verification
+                    window.location.href = '/loggedinUser.html'; // Adjust the path accordingly
+                } else {
+                    console.error('OTP verification failed');
+                }
+
+                // const data = await response.json();
+                alert(data.success ? data.message : data.error);
+            } catch (error) {
+                console.error('Error verifying email OTP:', error);
+            }
+        }
+    </script>
+
+    <!-- login function -->
+
+
+
+    <!-- timer -->
+    <script>
+        let timerInterval;
+        function startTimer(durationInSeconds) {
+            clearInterval(timerInterval);
+
+            let duration = durationInSeconds;
+
+            displayTime(duration);
+
+            // Update the timer every second
+            timerInterval = setInterval(function () {
+                duration--;
+                displayTime(duration);
+
+                // Check if the timer has reached 0
+                if (duration <= 0) {
+                    clearInterval(timerInterval);
+                    alert('Timer has ended!');
+                }
+            }, 1000);
+        }
+        function displayTime(seconds) {
+            const hours = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            const remainingSeconds = seconds % 60;
+
+            // Format the time as HH:MM:SS
+            const formattedTime = `${padZero(minutes)}:${padZero(remainingSeconds)}`;
+
+            // Update the timer display
+            document.getElementById('timer').innerText = formattedTime;
+        }
+
+        function padZero(number) {
+            return number < 10 ? '0' + number : number;
+        }
+    </script>
+    <!-- send Lopgin emails -->
+    <script>
+        function Logsendmail() {
+            const email = document.getElementById('email_login').value;
+            const sendbutton = document.getElementById('sendEmail');
+            // alert("this");
+            fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email: email
+                }),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data); // Handle server response
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+
+
+            sendbutton.disabled = true;
+            sendbutton.style.opacity = 0.4;
+            setTimeout(function () {
+                sendbutton.disabled = false;
+                sendbutton.style.opacity = 1;
+                console.log("setTimeout");
+            }, 120000);
+
+            startTimer(120);
+        }
+
+
+
+
+    </script>
+    <!-- login function -->
+    <script>
+        async function login() {
+            const email = document.getElementById('email_login').value;
+            const otp = document.getElementById('input7').value +
+                document.getElementById('input8').value +
+                document.getElementById('input9').value +
+                document.getElementById('input10').value +
+                document.getElementById('input11').value +
+                document.getElementById('input12').value;
+            // alert("button clicked :");
+            // console.log(otp);
+            try {
+                const response = await fetch('/userlogin', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email, otp }),
+                });
+                if (response.ok) {
+                    const data = await response.json();
+                    const token = data.token;
+
+                    // Store the token securely (e.g., in a secure HTTP-only cookie or local storage)
+                    document.cookie = `LoggedInUser=${token}; Secure; HttpOnly; SameSite=Strict`;
+
+                    // Redirect to the userloggedin page after successful OTP verification
+                    window.location.href = '/loggedinUser.html'; // Adjust the path accordingly
+                } else {
+                    console.error('OTP verification failed');
+                    const errorData = await response.json();
+                    alert(errorData.success ? errorData.message : errorData.error);
+                }
+
+                // const data = await response.json();
+                // alert(data.success ? data.message : data.error);
+            } catch (error) {
+                console.error('Error verifying email OTP:', error);
+            }
+        }
+    </script>
+
+
 
 
 </body>

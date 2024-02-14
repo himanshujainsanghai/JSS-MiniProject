@@ -1,59 +1,46 @@
-body{
-    @media (0<= width <=200px)  {
-        
+body {
+    @media (0<=width <=200px) {
+
         background-color: red;
     }
+
     @media (200px< width <=500px) {
         background-color: white;
     }
+
     @media (500px<width<=800px) {
         background-color: orange;
     }
+
     @media (800px< width <=1000px) {
         background-color: green;
-    }
-    
-}
-@media (600px< width <=1000px){
-    .services{
-        height: 250vh;
-        width: 100vw;
-    }
-}
-@media (0px< width <=600px){
-    .services{
-        height: 550vh;
-        width: 100vw;
-    }
-}
 
+        :root {
+            --services-contents-gridflex-height: 30vh;
+            --services-contents-gridflex-1-height: 25vh;
+            --services-contents-gridflex-2-height: 5vh;
+            --services-contents-gridflex-1-img-height: 25vh;
 
-
-.welcome-para{
-    visibility: hidden;
-}
-.services-contents{
-    @media (600px< width <=1000px) {
-        display: grid;
-
-            grid-template-columns: repeat(auto-fit );
-            grid-template-columns: repeat(2,auto);
+        }
 
     }
-    @media (0px< width <=600px) {
-        display: grid;
 
-            grid-template-columns: repeat(auto-fit );
-            grid-template-columns: repeat(1,auto);
-    }
-    display: flex;
-    /* flex-flow: column; */
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: auto;
-    
 }
-.services-contents-gridflex::before{
-    /* visibility: hidden; */
+
+@media (0<=width<900px) {
+   
+
+ 
+
+   
+
+ 
+
+    .footer_3_1 {
+        display: none;
+    }
+
+    .footer_3_2 {
+        display: block;
+    }
 }
