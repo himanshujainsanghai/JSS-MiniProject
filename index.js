@@ -162,13 +162,13 @@ function sendEmail(email, otp) {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'rajamoulirrr46@gmail.com', // Replace with your Gmail email address
-            pass: 'vfabqkesqgqqfwcj', // Replace with your Gmail password
+            user: 'email@gmail.com', // Replace with your Gmail email address
+            pass: 'password', // Replace with your Gmail password
         },
     });
 
     const mailOptions = {
-        from: 'rajamoulirrr46@gmail.com', // Replace with your Gmail email address
+        from: 'email@gmail.com', // Replace with your Gmail email address
         to: email,
         subject: 'Your OTP',
         text: `Your OTP is: ${otp}`,
