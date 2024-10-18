@@ -42,7 +42,7 @@ app.listen(port, () => {
 
 // Database
 
-const db_link = 'mongodb+srv://himanshujainhj70662:3SuFxUoYB6a4Ryce@cluster0.fur6b1w.mongodb.net/?retryWrites=true&w=majority';
+const db_link = 'db_link';
 
 mongoose.connect(db_link, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(function (db) {
